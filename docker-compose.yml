@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  mysql.api:
+    networks:
+      - default
+    image: mysql.api
+    build:
+      context: .
+      dockerfile: src/LocalMySql.Api/Dockerfile

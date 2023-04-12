@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LocalMySql.Api</name>
+    </assembly>
+    <members>
+        <member name="T:LocalMySql.Api.Controllers.CustomerController">
+            <summary>
+            Manage Customers
+            </summary>
+        </member>
+        <member name="M:LocalMySql.Api.Controllers.CustomerController.#ctor(LocalMySql.Api.Domain.Services.ICustomerService)">
+            <summary>
+            Manage Customers
+            </summary>
+            <param name="customerService">Customer Service</param>
+        </member>
+        <member name="M:LocalMySql.Api.Controllers.CustomerController.Create(LocalMySql.Api.Contracts.Requests.CreateCustomerRequestV1)">
+            <summary>
+            Create new Customer
+            </summary>
+            <param name="request">Create Customer request</param>
+            <returns>New <see cref="T:LocalMySql.Api.Contracts.Models.CustomerV1"/></returns>
+            <response code="201">Customer created</response>
+            <response code="400">Request is not valid</response>
+        </member>
+        <member name="M:LocalMySql.Api.Controllers.CustomerController.GetById(System.Guid)">
+            <summary>
+            Get Customer by ID
+            </summary>
+            <param name="id">Customer ID</param>
+            <returns><see cref="T:LocalMySql.Api.Contracts.Models.CustomerV1"/></returns>
+            <response code="200">Customer returned</response>
+            <response code="404">Customer not found</response>
+        </member>
+        <member name="M:LocalMySql.Api.Controllers.CustomerController.GetAll">
+            <summary>
+            Get all Customers
+            </summary>
+            <returns><see cref="T:System.Collections.Generic.List`1"/></returns>
+            <response code="200">Customers returned</response>
+        </member>
+    </members>
+</doc>

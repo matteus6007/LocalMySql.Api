@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  mysql.api:
+    networks:
+      - default
+    ports:
+      - "1001:80"
+      - "1002:443"
+    env_file: docker-compose.env

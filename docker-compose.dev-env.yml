@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+  local-db:
+    image: mysql:5.7
+    restart: unless-stopped
+    networks:
+      - default  
+    ports:
+      - "30001:3306"
+    volumes:
+      - localdbdata:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: cloudcall123
+      MYSQL_DATABASE: localdefaultdb
+
+  local-db-migrations:
+    depends_on:
+      - local-db
+    networks:
+      - default     
+    build:
+      context: .\db\roundhouse
+      dockerfile: Dockerfile
+    command: -cs "server=local-db;Database=localdefaultdb;uid=root;pwd=cloudcall123;SslMode=none;"
+
+volumes:
+  localdbdata:

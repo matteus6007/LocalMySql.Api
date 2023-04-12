@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalMySql.Api", "src\LocalMySql.Api\LocalMySql.Api.csproj", "{00B8F769-A2A1-4FB1-8E58-42212DF45FD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalMySql.Api.Domain", "src\LocalMySql.Api.Domain\LocalMySql.Api.Domain.csproj", "{2594781A-6986-4F84-90A2-146FADF06CCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalMySql.Api.Infrastructure", "src\LocalMySql.Api.Infrastructure\LocalMySql.Api.Infrastructure.csproj", "{F45997C1-6E04-4A6B-B969-D732D8946490}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalMySql.Api.Contracts", "src\LocalMySql.Api.Contracts\LocalMySql.Api.Contracts.csproj", "{CCC1B042-AB21-46CD-A66D-74198E68EEEA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F5DA9FF5-4ACC-4706-A923-7F72A1F0C7EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalMySql.Api.Infrastructure.Integration.Tests", "tests\LocalMySql.Api.Infrastructure.Integration.Tests\LocalMySql.Api.Infrastructure.Integration.Tests.csproj", "{4482A7D4-9E67-41B1-9A40-F361188B7D27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00B8F769-A2A1-4FB1-8E58-42212DF45FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B8F769-A2A1-4FB1-8E58-42212DF45FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B8F769-A2A1-4FB1-8E58-42212DF45FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B8F769-A2A1-4FB1-8E58-42212DF45FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2594781A-6986-4F84-90A2-146FADF06CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2594781A-6986-4F84-90A2-146FADF06CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2594781A-6986-4F84-90A2-146FADF06CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2594781A-6986-4F84-90A2-146FADF06CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F45997C1-6E04-4A6B-B969-D732D8946490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F45997C1-6E04-4A6B-B969-D732D8946490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F45997C1-6E04-4A6B-B969-D732D8946490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F45997C1-6E04-4A6B-B969-D732D8946490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCC1B042-AB21-46CD-A66D-74198E68EEEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCC1B042-AB21-46CD-A66D-74198E68EEEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCC1B042-AB21-46CD-A66D-74198E68EEEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCC1B042-AB21-46CD-A66D-74198E68EEEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4482A7D4-9E67-41B1-9A40-F361188B7D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4482A7D4-9E67-41B1-9A40-F361188B7D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4482A7D4-9E67-41B1-9A40-F361188B7D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4482A7D4-9E67-41B1-9A40-F361188B7D27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4482A7D4-9E67-41B1-9A40-F361188B7D27} = {F5DA9FF5-4ACC-4706-A923-7F72A1F0C7EF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {718A7827-F562-48C4-8FC3-01D27F40BEFB}
+	EndGlobalSection
+EndGlobal
